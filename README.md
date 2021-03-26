@@ -2,8 +2,6 @@
 
 **Twitch Chat Desktop** 是 [Twitch ObsChat](https://chat.alomerry.com/) 的 x86 应用。
 
-![BABANANA Chat Desktop](https://raw.githubusercontent.com/Eotones/BABANANA-Chat-Desktop/master/assets/readme_img/babanana_chat_desktop_07_2.png)
-
 ## 下载
 
 打包版本可以到 [Releases页面](https://github.com/Alomerry/TwitchChat/releases) 下载

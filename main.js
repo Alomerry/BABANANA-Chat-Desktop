@@ -10,8 +10,8 @@ const path = require('path');
 require('./common-process/context-menu');
 
 //視窗大小
-const window_width = 350;
-const window_height = 500;
+const window_width = 850;
+const window_height = 800;
 
 // 保持一個對於 window 對象的全局引用，如果你不這樣做，
 // 當 JavaScript 對象被垃圾回收， window 會被自動地關閉
@@ -69,26 +69,26 @@ function createWindow () {
     tray = new Tray( path.join(__dirname, 'assets/img/app.ico') );
 
     const template = [
-        {label: 'BABANANA Chat Desktop', enabled: false},
+        {label: 'Twitch Chat Desktop', enabled: true},
         {type: 'separator'},
-        {label: '置頂', type: 'checkbox', checked: true, click(e){
+        {label: '置顶', type: 'checkbox', checked: true, click(e){
             //console.log(e.checked);
             e.checked? win.setAlwaysOnTop(true) : win.setAlwaysOnTop(false);
         }},
-        {label: '防止點擊', type: 'checkbox', checked: false, click(e){
+        {label: '防止点击', type: 'checkbox', checked: false, click(e){
             //console.log(e.checked);
             e.checked? win.setIgnoreMouseEvents(true) : win.setIgnoreMouseEvents(false);
         }},
         {type: 'separator'},
         {label: '重新整理', click() { win.webContents.reload(); } },
         {type: 'separator'},
-        {label: '說明', click() { require('electron').shell.openExternal('https://hackmd.io/s/B183d6iwG') } },
-        {label: '關閉', click() { app.quit(); } }
+        // {label: '说明', click() { require('electron').shell.openExternal('https://hackmd.io/s/B183d6iwG') } },
+        {label: '关闭', click() { app.quit(); } }
     ];
 
     const contextMenu = Menu.buildFromTemplate(template);
 
-    tray.setToolTip('BABANANA Chat Desktop');
+    tray.setToolTip('Twitch Chat Desktop');
     tray.setContextMenu(contextMenu);
     /*
     tray.on('click', (event) => {

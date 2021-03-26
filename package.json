@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build_win64": "electron-packager . TwitchChat --out=./build/ --overwrite=true --platform=win32 --arch=x64 --version=0.36.4 --icon=assets/img/app.ico --asar=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true ",
+    "start_with_log": "electron . --enable-logging",
+    "build_win64": "electron-packager . TwitchChat --out=./build/ --overwrite=true --platform=win32 --arch=x64 --icon=assets/img/app.ico --asar=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true ",
     "build_win32": "electron-packager . TwitchChat --out=./build/ --overwrite=true --platform=win32 --icon=assets/img/app.ico --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true "
   },
   "repository": {
