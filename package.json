@@ -1,16 +1,24 @@
 {
-  "name": "babanana-chat-desktop",
-  "version": "0.3.1",
-  "description": "BABANANA Chat Desktop 為 BABANANA Chat 的桌面版應用程式。",
-  "private": true,
+  "name": "twitchchat",
+  "version": "1.0.0",
+  "description": "**BABANANA Chat Desktop** 是 [BABANANA Chat](https://banana.eotones.net/) 的桌面版應用程式，目前基本功能可以使用了。",
   "main": "main.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "build_win64": "electron-packager . BABANANA-Chat-Desktop --out=./build/ --overwrite=true --platform=win32 --arch=x64 --version=0.36.4 --icon=assets/img/app.ico --asar=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true ",
     "build_win32": "electron-packager . BABANANA-Chat-Desktop --out=./build/ --overwrite=true --platform=win32             --icon=assets/img/app.ico --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true "
   },
-  "author": "EOTONES",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alomerry/TwitchChat.git"
+  },
+  "author": "alomerry",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alomerry/TwitchChat/issues"
+  },
+  "homepage": "https://github.com/Alomerry/TwitchChat#readme",
   "devDependencies": {
     "electron": "^11.2.1",
     "electron-packager": "^15.2.0"
