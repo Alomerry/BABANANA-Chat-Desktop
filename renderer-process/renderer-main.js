@@ -24,14 +24,14 @@ menu.append(new MenuItem( {label: '說明', click() { require('electron').shell.
 */
 
 const template = [
-    {label: 'BABANANA Chat Desktop', enabled: false},
+    {label: 'Twitch Chat Desktop', enabled: false},
     {type: 'separator'},
-    //{label: '置頂', type: 'checkbox', checked: true},
-    //{label: '防止點擊', type: 'checkbox', checked: false},
+    {label: '置顶', type: 'checkbox', checked: true},
+    {label: '防止点击', type: 'checkbox', checked: false},
     {label: '重新整理', click() { webview.reload(); } },
     {type: 'separator'},
-    {label: '說明', click() { require('electron').shell.openExternal('https://hackmd.io/s/B183d6iwG') } },
-    {label: '關閉', click() { app.quit(); } }
+    {label: '说明', click() { require('electron').shell.openExternal('https://hackmd.io/s/B183d6iwG') } },
+    {label: '关闭', click() { app.quit(); } }
 ];
 
 const contextMenu = Menu.buildFromTemplate(template);
