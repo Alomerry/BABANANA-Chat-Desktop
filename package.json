@@ -1,13 +1,13 @@
 {
   "name": "twitchchat",
   "version": "1.0.0",
-  "description": "**BABANANA Chat Desktop** 是 [BABANANA Chat](https://banana.eotones.net/) 的桌面版應用程式，目前基本功能可以使用了。",
+  "description": "**Twitch Chat Desktop** 是 [Twitch ObsChat](https://chat.alomerry.com/) 的 x86 应用。",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build_win64": "electron-packager . BABANANA-Chat-Desktop --out=./build/ --overwrite=true --platform=win32 --arch=x64 --version=0.36.4 --icon=assets/img/app.ico --asar=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true ",
-    "build_win32": "electron-packager . BABANANA-Chat-Desktop --out=./build/ --overwrite=true --platform=win32             --icon=assets/img/app.ico --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true "
+    "build_win64": "electron-packager . TwitchChat --out=./build/ --overwrite=true --platform=win32 --arch=x64 --version=0.36.4 --icon=assets/img/app.ico --asar=true --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true ",
+    "build_win32": "electron-packager . TwitchChat --out=./build/ --overwrite=true --platform=win32 --icon=assets/img/app.ico --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist --prune=true "
   },
   "repository": {
     "type": "git",
