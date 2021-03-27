@@ -2,6 +2,12 @@
 
 **Twitch Chat Desktop** 是 [Twitch ObsChat](https://chat.alomerry.com/) 的 x86 应用。
 
+## Todo List
+
+- [x] 免魔法
+- [ ] 背景色可调节透明度
+- [ ] 展示关注人数，观看人数 
+
 ## 下载
 
 打包版本可以到 [Releases页面](https://github.com/Alomerry/TwitchChat/releases) 下载
